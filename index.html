@@ -116,7 +116,7 @@ body {
     <div class="track"><span class="number">02.</span><span class="title">take me out</span></div>
     <div class="track"><span class="number">03.</span><span class="title">love song</span></div>
     <div class="track"><span class="number">04.</span><span class="title">teleprompter</span></div>
-    <div class="track"><span class="number">05.</span><span class="title">don't associate me with them</span></div>
+    <div class="track"><span class="number">05.</span><span class="title">don't associate me with them.</span></div>
     <div class="track"><span class="number">06.</span><span class="title">fate (interlude)</span></div>
     <div class="track"><span class="number">07.</span><span class="title">together again</span></div>
     <div class="track"><span class="number">08.</span><span class="title">don't you like me around?</span></div>
@@ -146,7 +146,7 @@ document.querySelectorAll(".title").forEach(title => {
       ? "_bloodbath"
       : original === "teleprompter"
       ? "_teleprompter"
-      : original === "don't associate me with them" && isMobile
+      : original === "don't associate me with them." && isMobile
       ? "dont_associate"
       : filenameVersion(original);
 
@@ -161,12 +161,12 @@ document.querySelectorAll(".title").forEach(title => {
 </script>
 
 
-<footer class="footer-note">Coming 26626</footer>
+<footer class="footer-note">coming 26626</footer>
 
 <style>
 .footer-note{
   width:min(calc(100% - 96px),1440px);
-  margin:16px 48px 32px 48px;
+  margin:6px 48px 20px 48px;
   text-align:right;
   color:#4B6F8A;
   font-family:Helvetica,Arial,sans-serif;
@@ -177,7 +177,7 @@ document.querySelectorAll(".title").forEach(title => {
 @media (max-width:900px){
   .footer-note{
     width:calc(100% - 52px);
-    margin:12px 26px 24px 26px;
+    margin:6px 26px 16px 26px;
     font-size:11px;
   }
 }
