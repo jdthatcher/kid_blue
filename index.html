@@ -66,7 +66,8 @@ body {
   }
 
   .logo {
-    width: min(100vw, 360px);
+    width: 100%;
+    max-width: none;
     margin-bottom: 28px;
   }
 
@@ -87,6 +88,21 @@ body {
     overflow-wrap: anywhere;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .track {
+    display: block !important;
+  }
+
+  .track .number {
+    display: none !important;
+  }
+
+  .track .title {
+    display: block !important;
+  }
+}
+
 </style>
 </head>
 
@@ -100,7 +116,7 @@ body {
     <div class="track"><span class="number">02.</span><span class="title">take me out</span></div>
     <div class="track"><span class="number">03.</span><span class="title">love song</span></div>
     <div class="track"><span class="number">04.</span><span class="title">teleprompter</span></div>
-    <div class="track"><span class="number">05.</span><span class="title">don't associate me with them</span></div>
+    <div class="track"><span class="number">05.</span><span class="title">don't associate me with them.</span></div>
     <div class="track"><span class="number">06.</span><span class="title">fate (interlude)</span></div>
     <div class="track"><span class="number">07.</span><span class="title">together again</span></div>
     <div class="track"><span class="number">08.</span><span class="title">don't you like me around?</span></div>
@@ -130,8 +146,6 @@ document.querySelectorAll(".title").forEach(title => {
       ? "_bloodbath"
       : original === "teleprompter"
       ? "_teleprompter"
-      : original === "don't associate me with them" && isMobile
-      ? "dont_associate"
       : filenameVersion(original);
 
   title.addEventListener("mouseenter", () => {
