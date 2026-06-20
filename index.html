@@ -20,7 +20,6 @@ body {
 }
 
 .page {
-  min-height: 100vh;
   padding: 48px;
 }
 
@@ -103,6 +102,23 @@ body {
   }
 }
 
+
+.footer-note {
+  width: min(100%, 1440px);
+  margin-top: 8px;
+  text-align: right;
+  color: #4B6F8A;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+}
+
+@media (max-width: 900px) {
+  .footer-note {
+    margin-top: 6px;
+    font-size: 11px;
+  }
+}
+
 </style>
 </head>
 
@@ -123,6 +139,8 @@ body {
     <div class="track"><span class="number">09.</span><span class="title">can you hear it</span></div>
     <div class="track"><span class="number">10.</span><span class="title">i know you</span></div>
   </section>
+
+  <div class="footer-note">coming_26626</div>
 </main>
 
 <script>
@@ -160,28 +178,6 @@ document.querySelectorAll(".title").forEach(title => {
 });
 </script>
 
-
-<footer class="footer-note">coming_26626</footer>
-
-<style>
-.footer-note{
-  width:min(calc(100% - 96px),1440px);
-  margin:6px 48px 20px 48px;
-  text-align:right;
-  color:#4B6F8A;
-  font-family:Helvetica,Arial,sans-serif;
-  font-size:12px;
-  letter-spacing:.25em;
-}
-
-@media (max-width:900px){
-  .footer-note{
-    width:calc(100% - 52px);
-    margin:6px 26px 16px 26px;
-    font-size:11px;
-  }
-}
-</style>
 
 </body>
 </html>
